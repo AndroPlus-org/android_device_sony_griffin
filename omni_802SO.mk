@@ -18,16 +18,19 @@
 PRODUCT_RELEASE_NAME := griffin
 
 $(call inherit-product, build/target/product/aosp_base.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/sony/griffin/device.mk)
+$(call inherit-product, device/sony/802SO/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := griffin
-PRODUCT_NAME := omni_griffin
+PRODUCT_DEVICE := 802SO
+PRODUCT_NAME := omni_802SO
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := 802SO
 PRODUCT_MANUFACTURER := Sony

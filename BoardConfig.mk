@@ -23,7 +23,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-LOCAL_PATH := device/sony/griffin
+LOCAL_PATH := device/sony/802SO
 
 # Architecture
 TARGET_ARCH := arm64
@@ -148,4 +148,3 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TW_EXCLUDE_TWRPAPP := true
 TW_NO_USB_STORAGE := true
-PLATFORM_VERSION := 16.1.0

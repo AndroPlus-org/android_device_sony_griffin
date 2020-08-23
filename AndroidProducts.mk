@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_griffin.mk
+    $(LOCAL_DIR)/omni_802SO.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_griffin-user \
-    omni_griffin-userdebug \
-    omni_griffin-eng
+    omni_802SO-user \
+    omni_802SO-userdebug \
+    omni_802SO-eng
